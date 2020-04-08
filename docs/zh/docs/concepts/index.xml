@@ -1,0 +1,32 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CleverGo – 关键概念</title>
+    <link>/zh/docs/concepts/</link>
+    <description>Recent content in 关键概念 on CleverGo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 08 Apr 2020 10:44:52 +0800</lastBuildDate>
+    
+	  <atom:link href="/zh/docs/concepts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: 请求的生命周期</title>
+      <link>/zh/docs/concepts/request-lifecycle/</link>
+      <pubDate>Wed, 08 Apr 2020 10:44:52 +0800</pubDate>
+      
+      <guid>/zh/docs/concepts/request-lifecycle/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;img src=&#34;/img/request-lifecycle.png&#34; alt=&#34;Benchmark&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
