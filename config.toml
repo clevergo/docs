@@ -1,5 +1,6 @@
 baseURL = "/"
 title = "CleverGo Web Framework"
+publishDir = "docs"
 
 enableRobotsTXT = true
 
