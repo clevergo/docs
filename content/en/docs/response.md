@@ -26,6 +26,10 @@ func htmlBlob(ctx *clevergo.Context) error {
 }
 ```
 
+## Render
+
+Renders a template, see [Views](/docs/views).
+
 ## JSON
 
 ```go

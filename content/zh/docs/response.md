@@ -4,7 +4,7 @@ weight: 7
 date: 2020-04-08T13:20:52+08:00
 ---
 
-> `ctx.Response` 相当于 `http.ResponseWriter`.
+> `ctx.Response` 即 `http.ResponseWriter`.
 
 ## Text
 
@@ -25,6 +25,10 @@ func htmlBlob(ctx *clevergo.Context) error {
     return ctx.HTMLBlob(http.StatusOK, []byte("<html><body>hello world</body></html>"))
 }
 ```
+
+## Render
+
+渲染一个模板，详情参阅[视图](/zh/docs/views)。
 
 ## JSON
 
