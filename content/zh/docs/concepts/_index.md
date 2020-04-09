@@ -1,5 +1,4 @@
 ---
-title: "关键概念"
-linkTitle: "关键概念"
+title: "概念"
 weight: 4
 ---
