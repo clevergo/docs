@@ -118,3 +118,7 @@ no = 'Sorry to hear that. Please <a href="https://github.com/clevergo/website/is
 	url = "https://github.com/clevergo/clevergo"
 	icon = "fab fa-github"
         desc = "Development takes place here!"
+
+[params.jquery]
+  src = "https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"
+  hash = "sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
