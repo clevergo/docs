@@ -1,11 +1,11 @@
 ---
-title: "Error Handling"
-linkTitle: "Error Handling"
+title: "错误处理"
+linkTitle: "错误处理"
 weight: 10
 date: 2020-04-08T10:44:52+08:00
 ---
 
-Error Handler allow to record error and format error response, it recieves a context and an error that returns by middleware or final handler.
+错误处理器可以让你记录错误和格式化错误响应（HTML、JSON、XML...），其接收一个 **Context** 实例和一个由中间件或者最终处理器产生的**错误**。
 
 ```go
 type ErrorHandler struct {
@@ -37,10 +37,11 @@ tmpl := template.Must(template.New("error").Parse(`<html><body><h1>{{ .Error }}<
 router.ErrorHandler = NewErrorHandler(tmpl)
 ```
 
-```shell
+```go
 $ curl http://localhost:8080/404             
 <html><body><h1>404 page not found</h1></body></html>                                                
 
 $ curl "http://localhost:8080/404?format=json"
 {"message":"404 page not found"}                 
 ```
+
