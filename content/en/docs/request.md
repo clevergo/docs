@@ -23,3 +23,17 @@ func handler(ctx *clevergo.Context) error {
 	return nil
 }
 ```
+
+## Shortcuts
+
+| Method | |
+|---:|---|
+| Cookie | http.Request.Cookie |
+| Cookies | http.Request.Cookies |
+| GetHeader | http.Request.Header.Get |
+| FormValue | http.Request.FormValue |
+| PostFormValue | http.Request.PostFormValue |
+| QueryString | http.Request.URL.RawQuery |
+| QueryParam | http.Request.URL.Query().Get |
+| QueryParams | http.Request.URL.Query() |
+| DefaultQuery | QueryParam with default value |
