@@ -68,6 +68,14 @@ func params(ctx *clevergo.Context) error {
 }
 ```
 
+### Raw Path
+
+`Router.UseRawPath` allows to match parameter that contains escaped slash `%2f`.
+
+```go	
+router.UseRawPath = true	
+```	
+
 ## Options
 
 ### Route Name
