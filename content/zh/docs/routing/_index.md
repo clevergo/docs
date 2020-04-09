@@ -11,6 +11,10 @@ func index(ctx *clevergo.Context) error {
     return ctx.String(http.StatusOK, "hello world")
 }
 
+func hello(ctx *clevergo.Context) error {
+	return ctx.String(http.StatusOK, fmt.Sprintf("hello %s", ctx.Params.String("name")))
+}
+
 router := clevergo.NewRouter()
 router.Get("/", index) // GET /
 // router.Handle(http.MethodGet, index) // 等同于 router.Get.
@@ -19,6 +23,7 @@ router.Options("/", index) // OPTIONS /
 router.Patch("/", index) // PATCH /
 router.Post("/", index) // POST /
 router.Put("/", index) // PUT /
+router.Get("/hello/:name", hello) // GET /hello/foo, GET /hello/bar...
 ```
 
 ## 参数
