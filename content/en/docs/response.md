@@ -93,3 +93,14 @@ func blob(ctx *clevergo.Context) error {
     return ctx.Blob(http.StatusOK, "text/html", []byte("data"))
 }
 ```
+
+## Shortcuts
+
+| Method | |
+|---:|---|
+| Error | http.Error |
+| NotFound | http.NotFoud |
+| Redirect | http.Redirect |
+| SetCookie | http.SetCookie |
+| Write | http.ResponseWriter.Write |
+| WriteHeader | http.ResponseWriter.WriteHeader |
