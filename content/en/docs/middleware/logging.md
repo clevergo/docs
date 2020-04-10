@@ -16,5 +16,5 @@ import (
 ```go
 m := middleware.Logging(os.Stdout)
 // m := middleware.CombinedLogging(os.Stdout) // combined logging
-router.Use(m)
+router.Use(clevergo.WrapHH(m))
 ```
