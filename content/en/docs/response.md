@@ -97,10 +97,10 @@ func blob(ctx *clevergo.Context) error {
 ## Shortcuts
 
 | Method | |
-|---:|---|
-| Error | http.Error |
-| NotFound | http.NotFoud |
-| Redirect | http.Redirect |
-| SetCookie | http.SetCookie |
-| Write | http.ResponseWriter.Write |
-| WriteHeader | http.ResponseWriter.WriteHeader |
+|---|---|
+| Context.Error | http.Error |
+| Context.NotFound | http.NotFoud |
+| Context.Redirect | http.Redirect |
+| Context.SetCookie | http.SetCookie |
+| Context.Write | http.ResponseWriter.Write |
+| Context.WriteHeader | http.ResponseWriter.WriteHeader |

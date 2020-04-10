@@ -27,13 +27,13 @@ func handler(ctx *clevergo.Context) error {
 ## 快捷方式
 
 | 方法 | |
-|---:|---|
-| Cookie | http.Request.Cookie |
-| Cookies | http.Request.Cookies |
-| GetHeader | http.Request.Header.Get |
-| FormValue | http.Request.FormValue |
-| PostFormValue | http.Request.PostFormValue |
-| QueryString | http.Request.URL.RawQuery |
-| QueryParam | http.Request.URL.Query().Get |
-| QueryParams | http.Request.URL.Query() |
-| DefaultQuery | QueryParam with default value |
+|---|---|
+| Context.Cookie | http.Request.Cookie |
+| Context.Cookies | http.Request.Cookies |
+| Context.GetHeader | http.Request.Header.Get |
+| Context.FormValue | http.Request.FormValue |
+| Context.PostFormValue | http.Request.PostFormValue |
+| Context.QueryString | http.Request.URL.RawQuery |
+| Context.QueryParam | http.Request.URL.Query().Get |
+| Context.QueryParams | http.Request.URL.Query() |
+| Context.DefaultQuery | QueryParam with default value |
