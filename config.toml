@@ -89,6 +89,12 @@ github_project_repo = "https://github.com/clevergo/clevergo"
 # Enable Lunr.js offline search
 offlineSearch = true
 
+# Google adsense
+googleAdsense = "ca-pub-7827859788508375"
+
+# Baidu analytics
+baiduAnalytics = "afba29a2d051b29ccf73018b8c9df89c"
+
 # User interface configuration
 [params.ui]
 # Enable to show the side bar menu in its compact state.
