@@ -65,6 +65,15 @@ languageName ="简体中文"
 contentDir = "content/zh"
 time_format_default = "02.01.2006"
 time_format_blog = "02.01.2006"
+weight = 2
+[languages.zh-hant]
+title = "CleverGo"
+description = "一個用 Go 語言編寫的輕量級、高性能和功能豐富的 HTTP Web 開發框架。"
+languageName ="繁體中文"
+contentDir = "content/zh-hant"
+time_format_default = "02.01.2006"
+time_format_blog = "02.01.2006"
+weight = 3
 
 [[menu.main]]
     name = "GitHub"
