@@ -79,7 +79,7 @@ router.UseRawPath = true
 
 ### 命名路由
 
-命名路由用於 URLs 生成，詳情參閱[生成 URL](/zh/docs/routing/url-generation)。
+命名路由用於 URLs 生成，詳情參閱[生成 URL](/zh-hant/docs/routing/url-generation)。
 
 ### 路由中間件
 

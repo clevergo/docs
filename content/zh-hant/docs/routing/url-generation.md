@@ -57,4 +57,4 @@ func listPost(ctx *clevergo.Context) error {
 router.Get("/posts", listPost)
 ```
 
-> 匹配路由不能在全局路由使用，因爲路由解析是在調用全局中間件後才觸發，參閱[請求的生命週期](/zh/docs/concepts/request-lifecycle)。
+> 匹配路由不能在全局路由使用，因爲路由解析是在調用全局中間件後才觸發，參閱[請求的生命週期](/zh-hant/docs/concepts/request-lifecycle)。

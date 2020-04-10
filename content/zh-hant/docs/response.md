@@ -28,7 +28,7 @@ func htmlBlob(ctx *clevergo.Context) error {
 
 ## Render
 
-渲染一個模板，詳情參閱[視圖](/zh/docs/views)。
+渲染一個模板，詳情參閱[視圖](/zh-hant/docs/views)。
 
 ## JSON
 

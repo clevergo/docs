@@ -31,11 +31,11 @@ router.Use(
 
 ## 路由組中間件
 
-請參閱[路由組](/zh/docs/routing/route-group)。
+請參閱[路由組](/zh-hant/docs/routing/route-group)。
 
 ## 路由中間件
 
-請參閱[路由中間件](/zh/docs/routing/#路由中間件)。
+請參閱[路由中間件](/zh-hant/docs/routing/#路由中間件)。
 
 ## 第三方中間件
 

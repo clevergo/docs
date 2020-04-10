@@ -13,12 +13,12 @@ func home(ctx *clevergo.Context) error {
 }
 ```
 
-如果出現錯誤，可以返回錯誤給[錯誤處理器](/zh/docs/error-handling)，或者直接返回錯誤響應並返回 `nil`。
+如果出現錯誤，可以返回錯誤給[錯誤處理器](/zh-hant/docs/error-handling)，或者直接返回錯誤響應並返回 `nil`。
 
-請參閱[路由](/zh/docs/routing)瞭解如何註冊處理器。
+請參閱[路由](/zh-hant/docs/routing)瞭解如何註冊處理器。
 
 ## Context
 
 `Contexnt` 是一個包裹了 `*http.Request` 和 `http.ResponseWriter` 的結構體。
 
-請參閱 [請求](/zh/docs/request) 和 [響應](/zh/docs/response)。
+請參閱 [請求](/zh-hant/docs/request) 和 [響應](/zh-hant/docs/response)。
