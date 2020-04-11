@@ -10,6 +10,7 @@ menu:
 CleverGo 一個用 Go 語言編寫的<strong>輕量級</strong>、<strong>高性能</strong>和<strong>功能豐富</strong>的 HTTP Web 開發框架。
 
 - **高性能：** 速度極快，參閱[基準測試](/zh-hant/docs/benchmark)。
+- **平緩的學習曲線：** 所有文檔可在半小時內閱讀完畢。
 - **[反向路由生成](/zh-hant/docs/routing/url-generation)：** 可以通過命名路由或匹配路由生成 URL。
 - **[路由組](/zh-hant/docs/routing/route-group)：** 亦稱子路由。
 - **對 RESTful APIs 友好：** 很容易設計 RESTful APIs 和通過路由組對 APIs 進行版本化。

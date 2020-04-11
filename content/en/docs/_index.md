@@ -11,6 +11,7 @@ menu:
 CleverGo is a <strong>lightweight</strong>, <strong>high performance</strong> and <strong>feature rich</strong> HTTP web framework written in Go.
 
 - **High Performance:** extremely fast, see [Benchmark](/docs/benchmark).
+- **Gradual learning curve:** you can learn the entire usages by going through the documentation in half an hour.
 - **[Reverse Route Generation](/docs/routing/url-generation):** allow generating URL by named route or matched route.
 - **[Route Group](/docs/routing/route-group):** as known as subrouter.
 - **Friendly to APIs:** it is easy to design RESTful APIs and versioning your APIs by route group.
