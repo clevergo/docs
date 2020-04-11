@@ -20,6 +20,6 @@ See [Routing](/docs/routing) for registering request handlers.
 
 ## Context
 
-`Contexnt` is a wrapper of `*http.Request` and `http.ResponseWriter`.
+`Context` is a wrapper of `*http.Request` and `http.ResponseWriter`.
 
 See [Request](/docs/request) and [Response](/docs/response).

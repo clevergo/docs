@@ -5,7 +5,7 @@ weight: 5
 
 ## Create a Middleware
 
-Middleware is a function that recieves a `Handle` and returns a `Handle`. Let's take `ServerHeader` as an example, it writes `Server` header and then invokes the next middleware or handler.
+Middleware is a function that receives a `Handle` and returns a `Handle`. Let's take `ServerHeader` as an example, it writes `Server` header and then invokes the next middleware or handler.
 
 ```go
 func ServerHeader(srv string) clevergo.MiddlewareFunc {

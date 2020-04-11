@@ -19,6 +19,6 @@ func home(ctx *clevergo.Context) error {
 
 ## Context
 
-`Contexnt` 是一個包裹了 `*http.Request` 和 `http.ResponseWriter` 的結構體。
+`Context` 是一個包裹了 `*http.Request` 和 `http.ResponseWriter` 的結構體。
 
 請參閱 [請求](/zh-hant/docs/request) 和 [響應](/zh-hant/docs/response)。

@@ -5,7 +5,7 @@ weight: 10
 date: 2020-04-08T10:44:52+08:00
 ---
 
-Error Handler allow to record error and format error response, it recieves a context and an error that returns by middleware or final handler.
+Error Handler allow recording error and formatting error response, it receives a context and an error that returns by middleware or final handler.
 
 ```go
 type ErrorHandler struct {

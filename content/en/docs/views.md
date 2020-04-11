@@ -4,7 +4,7 @@ weight: 9
 date: 2020-04-08T13:50:52+08:00
 ---
 
-Router defines a `Renderer` interface for rendering a tempalte.
+Router defines a `Renderer` interface for rendering a template.
 
 ```go
 func render(ctx *clevergo.Context) error {
@@ -20,7 +20,7 @@ Before starting, we need to register a renderer, supported template engines are 
 
 ## Jet
 
-[Jet Renderer](https://github.com/clevergo/jetrenderer) is an adapter for [Jet](https://github.com/cloudykit/jet) tempalte engine.
+[Jet Renderer](https://github.com/clevergo/jetrenderer) is an adapter for [Jet](https://github.com/cloudykit/jet) template engine.
 
 ```go
 router.Renderer = jetrenderer.New(jet.NewHTMLSet("./views"))

@@ -33,7 +33,7 @@ func handler(ctx *clevergo.Context) error {
 }
 ```
 
-> `ctx.RouteURL` is a alias of `router.URL`.
+> `ctx.RouteURL` equals to `router.URL`.
 
 ## Matched Route
 
@@ -44,7 +44,7 @@ Matched route is another way to generate URLs of the current route without namin
 func listPost(ctx *clevergo.Context) error {
 	nextURL, nil := ctx.Route.URL()
 
-	page := ctx.DefaultQuery("page", "1")
+	page := ctx.DefaultQuery("page", "1")f
 	pageNum, nil := strconv.Atoi(page)
 	page = strconv.Itoa(pageNum + 1)
 	q := nextURL.Query()
@@ -58,4 +58,4 @@ func listPost(ctx *clevergo.Context) error {
 router.Get("/posts", listPost)
 ```
 
-> Matched route cannot used in global middleware, since route reslove is trigger after invoking global middleware, see [Request Lifecycle](/docs/concepts/request-lifecycle).
+> Matched route cannot be used in global middleware, since route resolve is trigger after invoking global middleware, see [Request Lifecycle](/docs/concepts/request-lifecycle).

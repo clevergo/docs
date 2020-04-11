@@ -91,7 +91,7 @@ router.Post(
     createPost,
     clevergo.RouteMiddleware(
         rateLimiter,
-        bodyLimit,
+        bodyLimiter,
         // ...
     ),
 )
