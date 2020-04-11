@@ -140,3 +140,9 @@ no = 'Sorry to hear that. Please <a href="https://github.com/clevergo/website/is
 [params.jquery]
   src = "https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"
   hash = "sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+
+[params.docsearch]
+  api_key = "6e86444395683d3c6fb2d97c278095c8"
+  index_name = "clevergo"
+  input_selector = ".td-search-input"
+  debug = false # Set debug to true if you want to inspect the dropdown
