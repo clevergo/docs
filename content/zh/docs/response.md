@@ -94,6 +94,26 @@ func blob(ctx *clevergo.Context) error {
 }
 ```
 
+## Redirect
+
+```go
+func redirect(ctx *clevergo.Context) error {
+    ctx.Redirect("/login", http.StatusFound)
+    return nil
+}
+```
+
+## SendFile
+
+发送文件让浏览器下载。
+
+```go
+func download(ctx *clevergo.Context) error {
+    buf := bytes.NewReader([]byte("bar"))
+    return ctx.SendFile("foo.txt", buf)
+}
+```
+
 ## 快捷方式
 
 | 方法 | |
