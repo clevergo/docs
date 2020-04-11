@@ -43,6 +43,6 @@ func main() {
 $ curl http://localhost:8080/
 hello world
 
-$ curl http://localhost:8080/hello/barbar
-hello barbar
+$ curl http://localhost:8080/hello/foobar
+hello foobar
 ```
