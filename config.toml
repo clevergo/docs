@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://clevergo.tech/"
 title = "CleverGo Web Framework"
 
 enableRobotsTXT = true
