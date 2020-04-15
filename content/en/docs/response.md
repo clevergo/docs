@@ -11,6 +11,7 @@ date: 2020-04-08T13:20:52+08:00
 ```go
 func text(ctx *clevergo.Context) error {
     return ctx.String(http.StatusOK, "hello world")
+    // return ctx.Stringf(http.StatusOK, "hello %s", "foobar")
 }
 ```
 
