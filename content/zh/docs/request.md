@@ -24,6 +24,49 @@ func handler(ctx *clevergo.Context) error {
 }
 ```
 
+## Decode
+
+路由器定义了一个 `Decoder` 接口，用于解码请求的输入。
+
+```go
+import "github.com/clevergo/form"
+```
+
+```go
+type loginForm struct {
+	Username string `json:"username"`
+	Password string `json:"password"`
+}
+
+func login(ctx *clevergo.Context) error {
+	f := new(loginForm)
+	if err := ctx.Decode(f); err != nil {
+		return err
+	}
+	fmt.Printf("%+v\n", f) // &{Username:foo Password:bar}
+
+	// 你需要验证表单数据
+
+	return ctx.Stringf("Hello %s", f.Username)
+}
+
+router.Decoder = form.New() // 注册 Decoder
+router.Post("/login", login)
+```
+
+```shell
+$ curl -d "username=foo&password=bar" \
+	http://localhost:8080/login
+hello foo
+
+$ curl -H "Content-Type: application/json" \
+	-d '{"username":"foo", "password":"bar"}' \
+	http://localhost:8080/login
+hello foo
+```
+
+> Decoder 于 **v1.11.0** 引进。
+
 ## 快捷方式
 
 | 方法 | |
