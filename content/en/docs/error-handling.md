@@ -25,7 +25,7 @@ func (h *ErrorHandler) Handle(ctx *clevergo.Context, err error) {
 	format := ctx.DefaultQuery("format", "html")
 	switch format {
 	case "json":
-		ctx.JSON(http.StatusOK, map[string]interface{}{
+		ctx.JSON(http.StatusOK, clevergo.Map{
 			"message": err.Error(),
 		})
 	default:

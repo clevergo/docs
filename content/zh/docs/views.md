@@ -8,7 +8,7 @@ date: 2020-04-08T13:50:52+08:00
 
 ```go
 func render(ctx *clevergo.Context) error {
-    return ctx.Render(http.StatusOK, "index.tmpl", map[string]interface{}{
+    return ctx.Render(http.StatusOK, "index.tmpl", clevergo.Map{
         "message": "hello world",
     })
 }

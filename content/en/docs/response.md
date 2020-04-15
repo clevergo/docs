@@ -35,7 +35,7 @@ Renders a template, see [Views](/docs/views).
 
 ```go
 func json(ctx *clevergo.Context) error {
-	return ctx.JSON(http.StatusOK, map[string]interface{}{
+	return ctx.JSON(http.StatusOK, clevergo.Map{
         "message": "hello world",
     })
 }
@@ -49,13 +49,13 @@ func jsonBlob(ctx *clevergo.Context) error {
 
 ```go
 func jsonp(ctx *clevergo.Context) error {
-	return ctx.JSONP(http.StatusOK, map[string]interface{}{
+	return ctx.JSONP(http.StatusOK, clevergo.Map{
         "message": "hello world",
     })
 }
 
 func jsonpCallback(ctx *clevergo.Context) error {
-	return ctx.JSONPCallback(http.StatusOK, "myCallback", map[string]interface{}{
+	return ctx.JSONPCallback(http.StatusOK, "myCallback", clevergo.Map{
         "message": "hello world",
     })
 }
@@ -65,7 +65,7 @@ func jsonpCallback(ctx *clevergo.Context) error {
 
 ```go
 func xml(ctx *clevergo.Context) error {
-	return ctx.XML(http.StatusOK, map[string]interface{}{
+	return ctx.XML(http.StatusOK, clevergo.Map{
         "message": "hello world",
     })
 }
