@@ -1,5 +1,4 @@
 baseURL = "https://clevergo.tech/"
-title = "CleverGo Web Framework"
 
 enableRobotsTXT = true
 
@@ -7,7 +6,7 @@ enableRobotsTXT = true
 theme = ["docsy"]
 
 # Will give values to .Lastmod etc.
-#enableGitInfo = true
+enableGitInfo = true
 
 # Language settings
 contentDir = "content/en"
@@ -53,13 +52,13 @@ id = "UA-97403777-5"
 
 [languages]
 [languages.en]
-title = "CleverGo"
+title = "CleverGo Web Framework"
 description = "A lightweight, high performance and feature rich HTTP web framework written in Go."
 languageName ="English"
 # Weight used for sorting.
 weight = 1
 [languages.zh]
-title = "CleverGo"
+title = "CleverGo Web 框架"
 description = "一个用 Go 语言编写的轻量级、高性能和功能丰富的 HTTP Web 开发框架。"
 languageName ="简体中文"
 contentDir = "content/zh"
@@ -67,7 +66,7 @@ time_format_default = "2006-01-02"
 time_format_blog = "2006-01-02"
 weight = 2
 [languages.zh-hant]
-title = "CleverGo"
+title = "CleverGo Web 框架"
 description = "一個用 Go 語言編寫的輕量級、高性能和功能豐富的 HTTP Web 開發框架。"
 languageName ="繁體中文"
 contentDir = "content/zh-hant"
