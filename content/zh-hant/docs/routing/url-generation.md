@@ -41,10 +41,10 @@ func handler(ctx *clevergo.Context) error {
 
 ```go
 func listPost(ctx *clevergo.Context) error {
-	nextURL, nil := ctx.Route.URL()
+	nextURL, _ := ctx.Route.URL()
 
 	page := ctx.DefaultQuery("page", "1")
-	pageNum, nil := strconv.Atoi(page)
+	pageNum, _ := strconv.Atoi(page)
 	page = strconv.Itoa(pageNum + 1)
 	q := nextURL.Query()
 	q.Set("page", page)
