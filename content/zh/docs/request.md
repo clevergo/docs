@@ -34,8 +34,8 @@ import "github.com/clevergo/form"
 
 ```go
 type loginForm struct {
-	Username string `json:"username"`
-	Password string `json:"password"`
+	Username string `schema:"username" json:"username"`
+	Password string `schema:"password" json:"password"`
 }
 
 // Validate implements form.Validatable interface, it will be
