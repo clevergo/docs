@@ -38,14 +38,19 @@ type loginForm struct {
 	Password string `json:"password"`
 }
 
+// Validate implements form.Validatable interface, it will be
+// invoked after decoding.
+func (f *loginForm) Validate() error {
+	// Validates form fields here.
+	return nil
+}
+
 func login(ctx *clevergo.Context) error {
 	f := new(loginForm)
 	if err := ctx.Decode(f); err != nil {
 		return err
 	}
 	fmt.Printf("%+v\n", f) // &{Username:foo Password:bar}
-
-	// you need to validate form field, it is not a duty of decoder.
 
 	return ctx.Stringf("Hello %s", f.Username)
 }

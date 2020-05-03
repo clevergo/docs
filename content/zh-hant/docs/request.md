@@ -38,14 +38,19 @@ type loginForm struct {
 	Password string `json:"password"`
 }
 
+// Validate implements form.Validatable interface, it will be
+// invoked after decoding.
+func (f *loginForm) Validate() error {
+	// Validates form fields here.
+	return nil
+}
+
 func login(ctx *clevergo.Context) error {
 	f := new(loginForm)
 	if err := ctx.Decode(f); err != nil {
 		return err
 	}
 	fmt.Printf("%+v\n", f) // &{Username:foo Password:bar}
-
-	// 你需要驗證表單數據
 
 	return ctx.Stringf("Hello %s", f.Username)
 }
