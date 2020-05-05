@@ -5,7 +5,7 @@ weight: 2
 date: 2020-04-08T10:44:52+08:00
 ---
 
-* Date: 2020/04/05
+* Date: 2020/05/05
 * Go: 1.14
 * [Source](https://github.com/razonyang/go-http-routing-benchmark)
 
@@ -15,74 +15,74 @@ date: 2020-04-08T10:44:52+08:00
 
 | | Version |
 | ---: | --- |
-| CleverGo | v1.9.0 |
+| CleverGo | v1.12.1 |
 | Echo | v4.1.16 |
-| Gin | v1.6.2 |
-| HttpRouter | v1.3.0 |
+| Gin | v1.6.3 |
+| HttpRouter | master |
 
 ```text
-BenchmarkEcho_Param                     16917187                71.2 ns/op             0 B/op          0 allocs/op
-BenchmarkGin_Param                       5957187               210 ns/op              32 B/op          1 allocs/op
-BenchmarkHttpRouter_Param               11565042                93.0 ns/op            32 B/op          1 allocs/op
-BenchmarkCleverGo_Param                 18139321                65.6 ns/op             0 B/op          0 allocs/op
-BenchmarkEcho_Param5                     7405576               165 ns/op               0 B/op          0 allocs/op
-BenchmarkGin_Param5                      5316942               211 ns/op              32 B/op          1 allocs/op
-BenchmarkHttpRouter_Param5               4284582               272 ns/op             160 B/op          1 allocs/op
-BenchmarkCleverGo_Param5                11253404               105 ns/op               0 B/op          0 allocs/op
-BenchmarkEcho_Param20                    2382092               511 ns/op               0 B/op          0 allocs/op
-BenchmarkGin_Param20                     2697861               438 ns/op              32 B/op          1 allocs/op
-BenchmarkHttpRouter_Param20              1312308               910 ns/op             640 B/op          1 allocs/op
-BenchmarkCleverGo_Param20                4401469               270 ns/op               0 B/op          0 allocs/op
-BenchmarkEcho_ParamWrite                 7462525               166 ns/op               8 B/op          1 allocs/op
-BenchmarkGin_ParamWrite                  5503063               224 ns/op              32 B/op          1 allocs/op
-BenchmarkHttpRouter_ParamWrite           9790910               124 ns/op              32 B/op          1 allocs/op
-BenchmarkCleverGo_ParamWrite            12461090                98.7 ns/op             0 B/op          0 allocs/op
-BenchmarkEcho_GithubStatic              12125133                98.0 ns/op             0 B/op          0 allocs/op
-BenchmarkGin_GithubStatic                6702390               178 ns/op              32 B/op          1 allocs/op
-BenchmarkHttpRouter_GithubStatic        31478012                38.1 ns/op             0 B/op          0 allocs/op
-BenchmarkCleverGo_GithubStatic          18279379                63.8 ns/op             0 B/op          0 allocs/op
-BenchmarkEcho_GithubParam                6818716               177 ns/op               0 B/op          0 allocs/op
-BenchmarkGin_GithubParam                 5673768               217 ns/op              32 B/op          1 allocs/op
-BenchmarkHttpRouter_GithubParam          5217598               230 ns/op              96 B/op          1 allocs/op
-BenchmarkCleverGo_GithubParam            9384177               122 ns/op               0 B/op          0 allocs/op
-BenchmarkEcho_GithubAll                    34786             34050 ns/op               0 B/op          0 allocs/op
-BenchmarkGin_GithubAll                     26689             45883 ns/op            6496 B/op        203 allocs/op
-BenchmarkHttpRouter_GithubAll              26613             43546 ns/op           13792 B/op        167 allocs/op
-BenchmarkCleverGo_GithubAll                48681             24564 ns/op               0 B/op          0 allocs/op
-BenchmarkEcho_GPlusStatic               18314020                66.9 ns/op             0 B/op          0 allocs/op
-BenchmarkGin_GPlusStatic                 7336438               165 ns/op              32 B/op          1 allocs/op
-BenchmarkHttpRouter_GPlusStatic         50243390                23.3 ns/op             0 B/op          0 allocs/op
-BenchmarkCleverGo_GPlusStatic           24276782                48.1 ns/op             0 B/op          0 allocs/op
-BenchmarkEcho_GPlusParam                12441846                97.5 ns/op             0 B/op          0 allocs/op
-BenchmarkGin_GPlusParam                  6299746               195 ns/op              32 B/op          1 allocs/op
-BenchmarkHttpRouter_GPlusParam           7702280               151 ns/op              64 B/op          1 allocs/op
-BenchmarkCleverGo_GPlusParam            13458559                92.2 ns/op             0 B/op          0 allocs/op
-BenchmarkEcho_GPlus2Params               7924144               152 ns/op               0 B/op          0 allocs/op
-BenchmarkGin_GPlus2Params                5417515               222 ns/op              32 B/op          1 allocs/op
-BenchmarkHttpRouter_GPlus2Params         6396112               179 ns/op              64 B/op          1 allocs/op
-BenchmarkCleverGo_GPlus2Params          10868599               109 ns/op               0 B/op          0 allocs/op
-BenchmarkEcho_GPlusAll                    747770              1561 ns/op               0 B/op          0 allocs/op
-BenchmarkGin_GPlusAll                     660558              2500 ns/op             416 B/op         13 allocs/op
-BenchmarkHttpRouter_GPlusAll              609037              2017 ns/op             640 B/op         11 allocs/op
-BenchmarkCleverGo_GPlusAll                944690              1224 ns/op               0 B/op          0 allocs/op
-BenchmarkEcho_ParseStatic               17630368                69.1 ns/op             0 B/op          0 allocs/op
-BenchmarkGin_ParseStatic                 7404474               166 ns/op              32 B/op          1 allocs/op
-BenchmarkHttpRouter_ParseStatic         50948972                22.8 ns/op             0 B/op          0 allocs/op
-BenchmarkCleverGo_ParseStatic           23951481                47.8 ns/op             0 B/op          0 allocs/op
-BenchmarkEcho_ParseParam                14224027                82.4 ns/op             0 B/op          0 allocs/op
-BenchmarkGin_ParseParam                  6667672               186 ns/op              32 B/op          1 allocs/op
-BenchmarkHttpRouter_ParseParam           8803288               144 ns/op              64 B/op          1 allocs/op
-BenchmarkCleverGo_ParseParam            14893399                79.9 ns/op             0 B/op          0 allocs/op
-BenchmarkEcho_Parse2Params               9941707               113 ns/op               0 B/op          0 allocs/op
-BenchmarkGin_Parse2Params                5996330               211 ns/op              32 B/op          1 allocs/op
-BenchmarkHttpRouter_Parse2Params         7428163               159 ns/op              64 B/op          1 allocs/op
-BenchmarkCleverGo_Parse2Params          13746112                90.4 ns/op             0 B/op          0 allocs/op
-BenchmarkEcho_ParseAll                    433760              2672 ns/op               0 B/op          0 allocs/op
-BenchmarkGin_ParseAll                     246598              5553 ns/op             832 B/op         26 allocs/op
-BenchmarkHttpRouter_ParseAll              461934              2782 ns/op             640 B/op         16 allocs/op
-BenchmarkCleverGo_ParseAll                554302              2046 ns/op               0 B/op          0 allocs/op
-BenchmarkEcho_StaticAll                    49604             24031 ns/op               0 B/op          0 allocs/op
-BenchmarkGin_StaticAll                     32766             36923 ns/op            5024 B/op        157 allocs/op
-BenchmarkHttpRouter_StaticAll             111400             10195 ns/op               0 B/op          0 allocs/op
-BenchmarkCleverGo_StaticAll                75066             15577 ns/op               0 B/op          0 allocs/op
+BenchmarkEcho_Param                      9861666               122 ns/op               0 B/op          0 allocs/op
+BenchmarkGin_Param                      12494502               105 ns/op               0 B/op          0 allocs/op
+BenchmarkHttpRouter_Param               15958222                78.0 ns/op             0 B/op          0 allocs/op
+BenchmarkCleverGo_Param                 12695022                88.3 ns/op             0 B/op          0 allocs/op
+BenchmarkEcho_Param5                     4142410               286 ns/op               0 B/op          0 allocs/op
+BenchmarkGin_Param5                      6874149               165 ns/op               0 B/op          0 allocs/op
+BenchmarkHttpRouter_Param5               8807510               138 ns/op               0 B/op          0 allocs/op
+BenchmarkCleverGo_Param5                 7758260               156 ns/op               0 B/op          0 allocs/op
+BenchmarkEcho_Param20                    1376014               838 ns/op               0 B/op          0 allocs/op
+BenchmarkGin_Param20                     3743918               298 ns/op               0 B/op          0 allocs/op
+BenchmarkHttpRouter_Param20              4676074               258 ns/op               0 B/op          0 allocs/op
+BenchmarkCleverGo_Param20                4381585               316 ns/op               0 B/op          0 allocs/op
+BenchmarkEcho_ParamWrite                 4596742               254 ns/op               8 B/op          1 allocs/op
+BenchmarkGin_ParamWrite                  6934353               176 ns/op               0 B/op          0 allocs/op
+BenchmarkHttpRouter_ParamWrite          10376676               117 ns/op               0 B/op          0 allocs/op
+BenchmarkCleverGo_ParamWrite             8998488               133 ns/op               0 B/op          0 allocs/op
+BenchmarkEcho_GithubStatic               7150136               158 ns/op               0 B/op          0 allocs/op
+BenchmarkGin_GithubStatic               10377639               131 ns/op               0 B/op          0 allocs/op
+BenchmarkHttpRouter_GithubStatic        19286025                65.1 ns/op             0 B/op          0 allocs/op
+BenchmarkCleverGo_GithubStatic          12085249               109 ns/op               0 B/op          0 allocs/op
+BenchmarkEcho_GithubParam                3778482               304 ns/op               0 B/op          0 allocs/op
+BenchmarkGin_GithubParam                 6419968               190 ns/op               0 B/op          0 allocs/op
+BenchmarkHttpRouter_GithubParam          8065258               154 ns/op               0 B/op          0 allocs/op
+BenchmarkCleverGo_GithubParam            6892191               173 ns/op               0 B/op          0 allocs/op
+BenchmarkEcho_GithubAll                    20208             59011 ns/op               0 B/op          0 allocs/op
+BenchmarkGin_GithubAll                     31452             39222 ns/op               0 B/op          0 allocs/op
+BenchmarkHttpRouter_GithubAll              40234             29057 ns/op               0 B/op          0 allocs/op
+BenchmarkCleverGo_GithubAll                36421             32468 ns/op               0 B/op          0 allocs/op
+BenchmarkEcho_GPlusStatic               11423619               107 ns/op               0 B/op          0 allocs/op
+BenchmarkGin_GPlusStatic                13291884                87.7 ns/op             0 B/op          0 allocs/op
+BenchmarkHttpRouter_GPlusStatic         36804595                36.1 ns/op             0 B/op          0 allocs/op
+BenchmarkCleverGo_GPlusStatic           15905011                71.5 ns/op             0 B/op          0 allocs/op
+BenchmarkEcho_GPlusParam                 7461649               145 ns/op               0 B/op          0 allocs/op
+BenchmarkGin_GPlusParam                 14197334                81.3 ns/op             0 B/op          0 allocs/op
+BenchmarkHttpRouter_GPlusParam          17845141                66.2 ns/op             0 B/op          0 allocs/op
+BenchmarkCleverGo_GPlusParam            15496012                77.4 ns/op             0 B/op          0 allocs/op
+BenchmarkEcho_GPlus2Params               5206744               239 ns/op               0 B/op          0 allocs/op
+BenchmarkGin_GPlus2Params                8227368               147 ns/op               0 B/op          0 allocs/op
+BenchmarkHttpRouter_GPlus2Params         9852040               119 ns/op               0 B/op          0 allocs/op
+BenchmarkCleverGo_GPlus2Params           7805029               144 ns/op               0 B/op          0 allocs/op
+BenchmarkEcho_GPlusAll                    454306              2854 ns/op               0 B/op          0 allocs/op
+BenchmarkGin_GPlusAll                     735115              1677 ns/op               0 B/op          0 allocs/op
+BenchmarkHttpRouter_GPlusAll              876234              1195 ns/op               0 B/op          0 allocs/op
+BenchmarkCleverGo_GPlusAll                839223              1412 ns/op               0 B/op          0 allocs/op
+BenchmarkEcho_ParseStatic               10589972               109 ns/op               0 B/op          0 allocs/op
+BenchmarkGin_ParseStatic                12999727                90.2 ns/op             0 B/op          0 allocs/op
+BenchmarkHttpRouter_ParseStatic         34477627                37.4 ns/op             0 B/op          0 allocs/op
+BenchmarkCleverGo_ParseStatic           15138662                75.5 ns/op             0 B/op          0 allocs/op
+BenchmarkEcho_ParseParam                 7664292               143 ns/op               0 B/op          0 allocs/op
+BenchmarkGin_ParseParam                 11960924               105 ns/op               0 B/op          0 allocs/op
+BenchmarkHttpRouter_ParseParam          14804965                73.9 ns/op             0 B/op          0 allocs/op
+BenchmarkCleverGo_ParseParam            13253904                82.6 ns/op             0 B/op          0 allocs/op
+BenchmarkEcho_Parse2Params               6680065               182 ns/op               0 B/op          0 allocs/op
+BenchmarkGin_Parse2Params               10222662               118 ns/op               0 B/op          0 allocs/op
+BenchmarkHttpRouter_Parse2Params        12435852                94.6 ns/op             0 B/op          0 allocs/op
+BenchmarkCleverGo_Parse2Params          11560776               106 ns/op               0 B/op          0 allocs/op
+BenchmarkEcho_ParseAll                    299674              4308 ns/op               0 B/op          0 allocs/op
+BenchmarkGin_ParseAll                     448986              3206 ns/op               0 B/op          0 allocs/op
+BenchmarkHttpRouter_ParseAll              697732              1872 ns/op               0 B/op          0 allocs/op
+BenchmarkCleverGo_ParseAll                662565              1693 ns/op               0 B/op          0 allocs/op
+BenchmarkEcho_StaticAll                    42777             27256 ns/op               0 B/op          0 allocs/op
+BenchmarkGin_StaticAll                     59330             23324 ns/op               0 B/op          0 allocs/op
+BenchmarkHttpRouter_StaticAll              73441             15605 ns/op               0 B/op          0 allocs/op
+BenchmarkCleverGo_StaticAll                54543             21351 ns/op               0 B/op          0 allocs/op
 ```
