@@ -44,7 +44,7 @@ Matched route is another way to generate URLs of the current route without namin
 func listPost(ctx *clevergo.Context) error {
 	nextURL, _ := ctx.Route.URL()
 
-	page := ctx.DefaultQuery("page", "1")f
+	page := ctx.DefaultQuery("page", "1")
 	pageNum, _ := strconv.Atoi(page)
 	page = strconv.Itoa(pageNum + 1)
 	q := nextURL.Query()
