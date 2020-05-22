@@ -7,8 +7,8 @@ date: 2020-04-08T13:50:52+08:00
 Router defines a `Renderer` interface for rendering a template.
 
 ```go
-func render(ctx *clevergo.Context) error {
-    return ctx.Render(http.StatusOK, "index.tmpl", clevergo.Map{
+func render(c *clevergo.Context) error {
+    return c.Render(http.StatusOK, "index.tmpl", clevergo.Map{
         "message": "hello world",
     })
 }

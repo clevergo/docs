@@ -7,12 +7,12 @@ weight: 5
 ## 基本路由
 
 ```go
-func index(ctx *clevergo.Context) error {
-    return ctx.String(http.StatusOK, "hello world")
+func index(c *clevergo.Context) error {
+    return c.String(http.StatusOK, "hello world")
 }
 
-func hello(ctx *clevergo.Context) error {
-	return ctx.String(http.StatusOK, fmt.Sprintf("hello %s", ctx.Params.String("name")))
+func hello(c *clevergo.Context) error {
+	return c.String(http.StatusOK, fmt.Sprintf("hello %s", c.Params.String("name")))
 }
 
 router := clevergo.NewRouter()
@@ -56,13 +56,13 @@ router.Get("/hello/:name", hello) // GET /hello/foo, GET /hello/bar...
 ### 获取参数
 
 ```go
-func params(ctx *clevergo.Context) error {
-	name := ctx.Params.String("name")
-	page, err := ctx.Params.Int("page")
-	num, err := ctx.Params.Int64("num")
-	amount, err := ctx.Params.Uint64("amount")
-	enable, err := ctx.Params.Bool("enable")
-	price, err := ctx.Params.Float64("price")
+func params(c *clevergo.Context) error {
+	name := c.Params.String("name")
+	page, err := c.Params.Int("page")
+	num, err := c.Params.Int64("num")
+	amount, err := c.Params.Uint64("amount")
+	enable, err := c.Params.Bool("enable")
+	price, err := c.Params.Float64("price")
 	return err
 }
 ```

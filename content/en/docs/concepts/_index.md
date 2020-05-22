@@ -9,8 +9,8 @@ weight: 4
 `Handle` is a request handler, it receives a [context](#context) instance, and write response to client:
 
 ```go
-func home(ctx *clevergo.Context) error {
-	return ctx.String(http.StatusOK, "hello world")
+func home(c *clevergo.Context) error {
+	return c.String(http.StatusOK, "hello world")
 }
 ```
 

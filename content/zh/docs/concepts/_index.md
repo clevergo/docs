@@ -8,8 +8,8 @@ weight: 4
 `Handle` 是一个请求处理器，其接收一个 [context](#context) 实例，然后返回响应给客户端：
 
 ```go
-func home(ctx *clevergo.Context) error {
-	return ctx.String(http.StatusOK, "hello world")
+func home(c *clevergo.Context) error {
+	return c.String(http.StatusOK, "hello world")
 }
 ```
 

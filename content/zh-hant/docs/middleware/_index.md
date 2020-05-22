@@ -10,9 +10,9 @@ weight: 5
 ```go
 func ServerHeader(srv string) clevergo.MiddlewareFunc {
     return func(next clevergo.Handle) clevergo.Handle {
-        return func(ctx *clevergo.Context) error {
+        return func(c *clevergo.Context) error {
             // 寫入 Server 響應頭。
-            ctx.Response.Header().Set("Server", srv)
+            c.Response.Header().Set("Server", srv)
             // 調用下一個中間件或處理器。
             return next(ctx)
         }

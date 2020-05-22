@@ -15,35 +15,35 @@ router.Get("/posts/:year/:month/:day/:slug", queryPost, clevergo.RouteName("post
 然后我们可以在中间件、处理器和视图使用。
 
 ```go
-func handler(ctx *clevergo.Context) error {
-    loginURL, err := ctx.RouteURL("login")
+func handler(c *clevergo.Context) error {
+    loginURL, err := c.RouteURL("login")
     fmt.Println(loginURL.String()) // /login
 
-    postURL, err := ctx.RouteURL("post")
+    postURL, err := c.RouteURL("post")
 	fmt.Println(err) // route "post" parameter "year" is required
     
-    postURL, err = ctx.RouteURL("post", "year", "2020", "month", "04", "day", "09", "slug", "hello world")
+    postURL, err = c.RouteURL("post", "year", "2020", "month", "04", "day", "09", "slug", "hello world")
     fmt.Println(postURL.String()) // /posts/2020/04/09/hello%20world
 
     // 参数是无序的，下面代码返回相同结果。
-    postURL, err = ctx.RouteURL("post", "month", "04", "slug", "hello world", "day", "09", "year", "2020")
+    postURL, err = c.RouteURL("post", "month", "04", "slug", "hello world", "day", "09", "year", "2020")
     fmt.Println(postURL.String()) // /posts/2020/04/09/hello%20world
 
     return err
 }
 ```
 
-> `ctx.RouteURL` 是 `router.URL` 的别名。
+> `c.RouteURL` 是 `router.URL` 的别名。
 
 ## 匹配路由
 
 匹配路由是另一种生成当前路由 URL 而不需要命名的方法。
 
 ```go
-func listPost(ctx *clevergo.Context) error {
-	nextURL, _ := ctx.Route.URL()
+func listPost(c *clevergo.Context) error {
+	nextURL, _ := c.Route.URL()
 
-	page := ctx.DefaultQuery("page", "1")
+	page := c.DefaultQuery("page", "1")
 	pageNum, _ := strconv.Atoi(page)
 	page = strconv.Itoa(pageNum + 1)
 	q := nextURL.Query()

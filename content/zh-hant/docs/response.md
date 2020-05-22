@@ -4,26 +4,26 @@ weight: 7
 date: 2020-04-08T13:20:52+08:00
 ---
 
-> `ctx.Response` 即 `http.ResponseWriter`.
+> `c.Response` 即 `http.ResponseWriter`.
 
 ## Text
 
 ```go
-func text(ctx *clevergo.Context) error {
-    return ctx.String(http.StatusOK, "hello world")
-    // return ctx.Stringf(http.StatusOK, "hello %s", "foobar")
+func text(c *clevergo.Context) error {
+    return c.String(http.StatusOK, "hello world")
+    // return c.Stringf(http.StatusOK, "hello %s", "foobar")
 }
 ```
 
 ## HTML
 
 ```go
-func html(ctx *clevergo.Context) error {
-    return ctx.HTML(http.StatusOK, "<html><body>hello world</body></html>")
+func html(c *clevergo.Context) error {
+    return c.HTML(http.StatusOK, "<html><body>hello world</body></html>")
 }
 
-func htmlBlob(ctx *clevergo.Context) error {
-    return ctx.HTMLBlob(http.StatusOK, []byte("<html><body>hello world</body></html>"))
+func htmlBlob(c *clevergo.Context) error {
+    return c.HTMLBlob(http.StatusOK, []byte("<html><body>hello world</body></html>"))
 }
 ```
 
@@ -34,28 +34,28 @@ func htmlBlob(ctx *clevergo.Context) error {
 ## JSON
 
 ```go
-func json(ctx *clevergo.Context) error {
-	return ctx.JSON(http.StatusOK, clevergo.Map{
+func json(c *clevergo.Context) error {
+	return c.JSON(http.StatusOK, clevergo.Map{
         "message": "hello world",
     })
 }
 
-func jsonBlob(ctx *clevergo.Context) error {
-    return ctx.JSONBlob([]byte(`{"message":"hello world"}`))
+func jsonBlob(c *clevergo.Context) error {
+    return c.JSONBlob([]byte(`{"message":"hello world"}`))
 }
 ```
 
 ## JSONP
 
 ```go
-func jsonp(ctx *clevergo.Context) error {
-	return ctx.JSONP(http.StatusOK, clevergo.Map{
+func jsonp(c *clevergo.Context) error {
+	return c.JSONP(http.StatusOK, clevergo.Map{
         "message": "hello world",
     })
 }
 
-func jsonpCallback(ctx *clevergo.Context) error {
-	return ctx.JSONPCallback(http.StatusOK, "myCallback", clevergo.Map{
+func jsonpCallback(c *clevergo.Context) error {
+	return c.JSONPCallback(http.StatusOK, "myCallback", clevergo.Map{
         "message": "hello world",
     })
 }
@@ -64,14 +64,14 @@ func jsonpCallback(ctx *clevergo.Context) error {
 ## XML
 
 ```go
-func xml(ctx *clevergo.Context) error {
-	return ctx.XML(http.StatusOK, clevergo.Map{
+func xml(c *clevergo.Context) error {
+	return c.XML(http.StatusOK, clevergo.Map{
         "message": "hello world",
     })
 }
 
-func xmlBlob(ctx *clevergo.Context) error {
-    return ctx.XMLBlob(http.StatusOK, []byte(`<xml><message>hello world</message></xml>`))
+func xmlBlob(c *clevergo.Context) error {
+    return c.XMLBlob(http.StatusOK, []byte(`<xml><message>hello world</message></xml>`))
 }
 ```
 
@@ -80,8 +80,8 @@ func xmlBlob(ctx *clevergo.Context) error {
 `Emit` 發出一個帶有給定狀態碼、內容類型和字符串數據的響應。
 
 ```go
-func emit(ctx *clevergo.Context) error {
-    return ctx.Emit(http.StatusOK, "text/html", "data")
+func emit(c *clevergo.Context) error {
+    return c.Emit(http.StatusOK, "text/html", "data")
 }
 ```
 
@@ -90,16 +90,16 @@ func emit(ctx *clevergo.Context) error {
 `Blob` 發出一個帶有給定狀態碼、內容類型和字節塊數據的響應。
 
 ```go
-func blob(ctx *clevergo.Context) error {
-    return ctx.Blob(http.StatusOK, "text/html", []byte("data"))
+func blob(c *clevergo.Context) error {
+    return c.Blob(http.StatusOK, "text/html", []byte("data"))
 }
 ```
 
 ## Redirect
 
 ```go
-func redirect(ctx *clevergo.Context) error {
-    ctx.Redirect("/login", http.StatusFound)
+func redirect(c *clevergo.Context) error {
+    c.Redirect("/login", http.StatusFound)
     return nil
 }
 ```
@@ -109,9 +109,9 @@ func redirect(ctx *clevergo.Context) error {
 發送文件讓瀏覽器下載。
 
 ```go
-func download(ctx *clevergo.Context) error {
+func download(c *clevergo.Context) error {
     buf := bytes.NewReader([]byte("bar"))
-    return ctx.SendFile("foo.txt", buf)
+    return c.SendFile("foo.txt", buf)
 }
 ```
 

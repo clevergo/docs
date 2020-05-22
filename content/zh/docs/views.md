@@ -7,8 +7,8 @@ date: 2020-04-08T13:50:52+08:00
 路由器为模板引擎定义了一个 `Renderer` 接口。
 
 ```go
-func render(ctx *clevergo.Context) error {
-    return ctx.Render(http.StatusOK, "index.tmpl", clevergo.Map{
+func render(c *clevergo.Context) error {
+    return c.Render(http.StatusOK, "index.tmpl", clevergo.Map{
         "message": "hello world",
     })
 }

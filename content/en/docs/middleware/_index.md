@@ -10,9 +10,9 @@ Middleware is a function that receives a `Handle` and returns a `Handle`. Let's 
 ```go
 func ServerHeader(srv string) clevergo.MiddlewareFunc {
     return func(next clevergo.Handle) clevergo.Handle {
-        return func(ctx *clevergo.Context) error {
+        return func(c *clevergo.Context) error {
             // writes server header.
-            ctx.Response.Header().Set("Server", srv)
+            c.Response.Header().Set("Server", srv)
             // invokes the next middleware or handler.
             return next(ctx)
         }

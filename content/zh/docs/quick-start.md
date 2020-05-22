@@ -23,12 +23,12 @@ import (
 	"github.com/clevergo/clevergo"
 )
 
-func home(ctx *clevergo.Context) error {
-	return ctx.String(http.StatusOK, "hello world")
+func home(c *clevergo.Context) error {
+	return c.String(http.StatusOK, "hello world")
 }
 
-func hello(ctx *clevergo.Context) error {
-	return ctx.String(http.StatusOK, fmt.Sprintf("hello %s", ctx.Params.String("name")))
+func hello(c *clevergo.Context) error {
+	return c.String(http.StatusOK, fmt.Sprintf("hello %s", c.Params.String("name")))
 }
 
 func main() {

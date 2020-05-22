@@ -4,22 +4,22 @@ weight: 6
 date: 2020-04-08T13:39:52+08:00
 ---
 
-> `ctx.Request` 即 `*http.Request`.
+> `c.Request` 即 `*http.Request`.
 
 ## 请求方法断言
 
 ```go
-func handler(ctx *clevergo.Context) error {
-	// equals to ctx.IsMethod(http.MethodGet).
-	if ctx.IsGet() {
+func handler(c *clevergo.Context) error {
+	// equals to c.IsMethod(http.MethodGet).
+	if c.IsGet() {
 	}
 	// other shortcuts:
-	//ctx.IsDelete()
-	//ctx.IsPatch()
-	//ctx.IsPost()
-	//ctx.IsPut()
-	//ctx.IsOptions()
-	//ctx.IsAJAX()
+	//c.IsDelete()
+	//c.IsPatch()
+	//c.IsPost()
+	//c.IsPut()
+	//c.IsOptions()
+	//c.IsAJAX()
 	return nil
 }
 ```
@@ -45,14 +45,14 @@ func (f *loginForm) Validate() error {
 	return nil
 }
 
-func login(ctx *clevergo.Context) error {
+func login(c *clevergo.Context) error {
 	f := new(loginForm)
-	if err := ctx.Decode(f); err != nil {
+	if err := c.Decode(f); err != nil {
 		return err
 	}
 	fmt.Printf("%+v\n", f) // &{Username:foo Password:bar}
 
-	return ctx.Stringf("Hello %s", f.Username)
+	return c.Stringf("Hello %s", f.Username)
 }
 
 router.Decoder = form.New() // 注册 Decoder
