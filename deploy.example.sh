@@ -1,1 +1,1 @@
-env HUGO_ENV="production" hugo && rsync -avzz --delete -e 'ssh -p port' public/ root@clevergo.tech:/path
+env HUGO_ENV="production" hugo && rsync -avzz --delete -e 'ssh -p 22' public/ root@clevergo.tech:/path
