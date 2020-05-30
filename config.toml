@@ -142,3 +142,7 @@ no = 'Sorry to hear that. Please <a href="https://github.com/clevergo/website/is
   index_name = "clevergo"
   input_selector = ".td-search-input"
   debug = false # Set debug to true if you want to inspect the dropdown
+
+[params.beian]
+  no = "粤ICP备20043980号"
+  link = "http://beian.miit.gov.cn/"
