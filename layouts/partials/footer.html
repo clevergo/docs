@@ -22,7 +22,7 @@
 	{{ if not .Site.Params.ui.footer_about_disable }}
 		{{ with .Site.GetPage "about" }}<p class="mt-2"><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}
   {{ end }}
-        <p><a class="text-white" href="{{ .Site.Params.Beian.Link }}" target="_blank"><small>{{ .Site.Params.Beian.No }}</small></a></p>
+        {{ partial "beian" . }}
       </div>
     </div>
   </div>

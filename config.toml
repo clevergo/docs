@@ -144,5 +144,7 @@ no = 'Sorry to hear that. Please <a href="https://github.com/clevergo/website/is
   debug = false # Set debug to true if you want to inspect the dropdown
 
 [params.beian]
-  no = "粤ICP备20043980号"
-  link = "http://beian.miit.gov.cn/"
+  no = "粤公网安备44040302000337号"
+  link = "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44040302000337"
+  icpNo = "粤ICP备20043980号"
+  icpLink = "http://beian.miit.gov.cn/"
