@@ -8,7 +8,7 @@ CORS middleware is powered by [rs/cors](https://github.com/rs/cors).
 
 ```go
 import (
-    "github.com/clevergo/clevergo"
+    "clevergo.tech/clevergo"
     "github.com/rs/cors"
 )
 ```

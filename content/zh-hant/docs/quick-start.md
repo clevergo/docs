@@ -7,8 +7,8 @@ date: 2020-04-08T10:44:52+08:00
 
 ## 安裝
 
-```
-go get github.com/clevergo/clevergo
+```shell
+go get clevergo.tech/clevergo
 ```
 
 ## 舉個栗子
@@ -18,9 +18,8 @@ package main
 
 import (
 	"fmt"
-	"net/http"
 
-	"github.com/clevergo/clevergo"
+	"clevergo.tech/clevergo"
 )
 
 func home(c *clevergo.Context) error {
@@ -32,10 +31,10 @@ func hello(c *clevergo.Context) error {
 }
 
 func main() {
-	router := clevergo.NewRouter()
-	router.Get("/", home)
-	router.Get("/hello/:name", hello)
-	http.ListenAndServe(":8080", router)
+	app := clevergo.New()
+	app.Get("/", home)
+	app.Get("/hello/:name", hello)
+	app.Run(":8080")
 }
 ```
 

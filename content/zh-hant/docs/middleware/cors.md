@@ -8,7 +8,7 @@ CORS 中間件由 [rs/cors](https://github.com/rs/cors) 提供。
 
 ```go
 import (
-    "github.com/clevergo/clevergo"
+    "clevergo.tech/clevergo"
     "github.com/rs/cors"
 )
 ```

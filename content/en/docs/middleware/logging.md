@@ -8,7 +8,7 @@ Logging middleware is provided by [clevergo/middleware](https://github.com/cleve
 
 ```go
 import (
-    "github.com/clevergo/clevergo"
+    "clevergo.tech/clevergo"
 	"github.com/clevergo/middleware"
 )
 ```

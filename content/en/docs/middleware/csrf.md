@@ -8,7 +8,7 @@ CRSF middleware is provided by [gorilla/csrf](https://github.com/gorilla/csrf).
 
 ```go
 import (
-    "github.com/clevergo/clevergo"
+    "clevergo.tech/clevergo"
     "github.com/gorilla/csrf"
 )
 ```

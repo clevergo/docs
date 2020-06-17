@@ -8,7 +8,7 @@ Minify 中间件由 [tdewolff/minify](https://github.com/tdewolff/minify) 提供
 
 ```go
 import (
-	"github.com/clevergo/clevergo"
+	"clevergo.tech/clevergo"
 	"github.com/tdewolff/minify/v2"
 	"github.com/tdewolff/minify/v2/css"
 	"github.com/tdewolff/minify/v2/html"

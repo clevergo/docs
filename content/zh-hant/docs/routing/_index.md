@@ -15,15 +15,15 @@ func hello(c *clevergo.Context) error {
 	return c.String(http.StatusOK, fmt.Sprintf("hello %s", c.Params.String("name")))
 }
 
-router := clevergo.NewRouter()
-router.Get("/", index) // GET /
-// router.Handle(http.MethodGet, index) // 等同於 router.Get.
-router.Delete("/", index) // DELETE /
-router.Options("/", index) // OPTIONS /
-router.Patch("/", index) // PATCH /
-router.Post("/", index) // POST /
-router.Put("/", index) // PUT /
-router.Get("/hello/:name", hello) // GET /hello/foo, GET /hello/bar...
+app := clevergo.New()
+app.Get("/", index) // GET /
+// app.Handle(http.MethodGet, index) // 等同於 app.Get.
+app.Delete("/", index) // DELETE /
+app.Options("/", index) // OPTIONS /
+app.Patch("/", index) // PATCH /
+app.Post("/", index) // POST /
+app.Put("/", index) // PUT /
+app.Get("/hello/:name", hello) // GET /hello/foo, GET /hello/bar...
 ```
 
 ## 參數

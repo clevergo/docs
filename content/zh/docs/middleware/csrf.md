@@ -8,7 +8,7 @@ CRSF 中间件由 [gorilla/csrf](https://github.com/gorilla/csrf) 提供。
 
 ```go
 import (
-    "github.com/clevergo/clevergo"
+    "clevergo.tech/clevergo"
     "github.com/gorilla/csrf"
 )
 ```

@@ -8,7 +8,7 @@ Minify middleware is provided by [tdewolff/minify](https://github.com/tdewolff/m
 
 ```go
 import (
-	"github.com/clevergo/clevergo"
+	"clevergo.tech/clevergo"
 	"github.com/tdewolff/minify/v2"
 	"github.com/tdewolff/minify/v2/css"
 	"github.com/tdewolff/minify/v2/html"

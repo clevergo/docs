@@ -8,7 +8,7 @@ Logging 中间件由 [clevergo/middleware](https://github.com/clevergo/middlewar
 
 ```go
 import (
-    "github.com/clevergo/clevergo"
+    "clevergo.tech/clevergo"
 	"github.com/clevergo/middleware"
 )
 ```

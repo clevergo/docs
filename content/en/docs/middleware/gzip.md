@@ -8,7 +8,7 @@ Gzip middleware is provided by [NYTimes/gziphandler](https://github.com/NYTimes/
 
 ```go
 import (
-    "github.com/clevergo/clevergo"
+    "clevergo.tech/clevergo"
     "github.com/NYTimes/gziphandler"
 )
 ```
