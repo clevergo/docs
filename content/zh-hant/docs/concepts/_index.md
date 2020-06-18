@@ -3,6 +3,10 @@ title: "概念"
 weight: 4
 ---
 
+## Application
+
+`Application` 是一個根路由。
+
 ## Handle
 
 `Handle` 是一個請求處理器，其接收一個 [context](#context) 實例，然後返回響應給客戶端：

@@ -4,6 +4,10 @@ linkTitle: "Concepts"
 weight: 4
 ---
 
+## Application
+
+`Application` is a root router.
+
 ## Handle
 
 `Handle` is a request handler, it receives a [context](#context) instance, and write response to client:
