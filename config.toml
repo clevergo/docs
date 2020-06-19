@@ -75,8 +75,13 @@ time_format_blog = "2006-01-02"
 weight = 3
 
 [[menu.main]]
-    name = "GitHub"
+    name = "Examples"
     weight = 50
+    url = "https://github.com/clevergo/examples"
+
+[[menu.main]]
+    name = "GitHub"
+    weight = 60
     url = "https://github.com/clevergo/clevergo"
 
 [markup]
