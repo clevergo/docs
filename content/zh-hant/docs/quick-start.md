@@ -8,7 +8,7 @@ date: 2020-04-08T10:44:52+08:00
 ## 安裝
 
 ```shell
-go get clevergo.tech/clevergo
+go get -u clevergo.tech/clevergo
 ```
 
 ## 舉個栗子
