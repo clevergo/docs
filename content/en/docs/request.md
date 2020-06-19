@@ -70,8 +70,6 @@ $ curl -H "Content-Type: application/json" \
 hello foo
 ```
 
-> Decoder was introduced in **v1.11.0**.
-
 ## Shortcuts
 
 | Method | |

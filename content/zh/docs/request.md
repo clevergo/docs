@@ -70,8 +70,6 @@ $ curl -H "Content-Type: application/json" \
 hello foo
 ```
 
-> Decoder 于 **v1.11.0** 引进。
-
 ## 快捷方式
 
 | 方法 | |
