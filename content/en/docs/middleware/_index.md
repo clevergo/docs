@@ -14,7 +14,7 @@ func ServerHeader(srv string) clevergo.MiddlewareFunc {
             // writes server header.
             c.Response.Header().Set("Server", srv)
             // invokes the next middleware or handler.
-            return next(ctx)
+            return next(c)
         }
     }
 }

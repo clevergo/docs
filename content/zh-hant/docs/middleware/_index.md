@@ -14,7 +14,7 @@ func ServerHeader(srv string) clevergo.MiddlewareFunc {
             // 寫入 Server 響應頭。
             c.Response.Header().Set("Server", srv)
             // 調用下一個中間件或處理器。
-            return next(ctx)
+            return next(c)
         }
     }
 }
