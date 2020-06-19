@@ -23,7 +23,7 @@ func ServerHeader(srv string) clevergo.MiddlewareFunc {
 ## 全局中间件
 
 ```go
-router.Use(
+app.Use(
     clevergo.Recovery(true), // Recovery 中间件
     ServerHeader("CleverGo"),
 )
@@ -42,7 +42,7 @@ router.Use(
 `WrapHH` 是一个将 `func(http.Handler) http.Handler` 转化为中间件的适配器，你可以轻松地使用绝大部分的第三方中间件。
 
 ```go
-router.Use(
+app.Use(
     // https://github.com/nytimes/gziphandler
     clevergo.WrapHH(gziphandler.GzipHandler),
 )

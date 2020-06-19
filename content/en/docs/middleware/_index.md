@@ -23,7 +23,7 @@ func ServerHeader(srv string) clevergo.MiddlewareFunc {
 ## Global Middleware
 
 ```go
-router.Use(
+app.Use(
     clevergo.Recovery(true), // built-in recovery middleware.
     ServerHeader("CleverGo"),
 )
@@ -42,7 +42,7 @@ See [Route Middleware](/docs/routing/#route-middleware).
 `WrapHH` is an adapter that converts `func(http.Handler) http.Handler` to a middleware, you can use most of the third-party middleware in CleverGo without a struggle.
 
 ```go
-router.Use(
+app.Use(
     // https://github.com/nytimes/gziphandler
     clevergo.WrapHH(gziphandler.GzipHandler),
 )

@@ -4,17 +4,14 @@ linkTitle: "Logging"
 weight: 3
 ---
 
-Logging 中間件由 [clevergo/middleware](https://github.com/clevergo/middleware) 提供。
+如果你使用 `New` 創建應用，無需再次綁定 Logging 中間件。
 
 ```go
 import (
     "clevergo.tech/clevergo"
-	"github.com/clevergo/middleware"
 )
 ```
 
 ```go
-m := middleware.Logging(os.Stdout)
-// m := middleware.CombinedLogging(os.Stdout) // combined logging
-router.Use(clevergo.WrapHH(m))
+app.Use(middleware.Logging())
 ```

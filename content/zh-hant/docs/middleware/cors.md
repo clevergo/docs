@@ -15,5 +15,5 @@ import (
 
 ```go
 m := cors.Default().Handler
-router.Use(clevergo.WrapHH(m))
+app.Use(clevergo.WrapHH(m))
 ```

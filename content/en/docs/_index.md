@@ -20,7 +20,6 @@ In fact, it's not an out of the box framework, it provides many decoupling packa
 - **[Route Group](/docs/routing/route-group):** as known as subrouter.
 - **Friendly to APIs:** it is easy to design RESTful APIs and versioning your APIs by route group.
 - **[Middleware](/docs/middleware):** plug middleware in route group or particular route, supports global middleware as well. Compatible with most of third-party middleware.
-- **[Error Handler](/docs/error-handling):** record error and format error response.
 - ...
 
 ## Comparison with other frameworks

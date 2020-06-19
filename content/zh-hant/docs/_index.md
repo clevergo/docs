@@ -19,7 +19,6 @@ CleverGo 一個用 Go 語言編寫的<strong>輕量級</strong>、<strong>高性
 - **[路由組](/zh-hant/docs/routing/route-group)：** 亦稱子路由。
 - **對 RESTful APIs 友好：** 很容易設計 RESTful APIs 和通過路由組對 APIs 進行版本化。
 - **[中間件](/zh-hant/docs/middleware)：** 可以在路由組或特定路由插入中間件，也支持全局中間件，兼容大部分第三方中間件。
-- **[Error Handler](/zh-hant/docs/error-handling)：** 記錄錯誤和格式化錯誤響應。
 - ...
 
 ## 對比其他框架

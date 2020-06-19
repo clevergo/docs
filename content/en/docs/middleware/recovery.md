@@ -4,11 +4,8 @@ linkTitle: "Recovery"
 weight: 1
 ---
 
-CleverGo provides a built-in recovery middleware.
+CleverGo provides a built-in recovery middleware, what it does is that catch panic and returns the panic error to the upstream middleware.
 
 ```go
-rm := clevergo.Recovery(true) // enable debug mode, it writes stack info to log.
-// rm := clevergo.RecoveryLogger(true, log.New(out, prefix, flag)) // specify logger.
-
-router.Use(rm)
+app.Use(clevergo.Recovery())
 ```

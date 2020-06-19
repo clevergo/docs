@@ -19,5 +19,5 @@ m := csrf.Protect(
     csrf.Secure(false), // 本地開發
     // 其他選項
 )
-router.Use(clevergo.WrapHH(m))
+app.Use(clevergo.WrapHH(m))
 ```

@@ -14,5 +14,5 @@ import (
 ```
 
 ```go
-router.Use(clevergo.WrapHH(gziphandler.GzipHandler))
+app.Use(clevergo.WrapHH(gziphandler.GzipHandler))
 ```

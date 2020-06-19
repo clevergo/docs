@@ -24,5 +24,5 @@ m.AddFunc("text/css", css.Minify)
 m.AddFunc("text/html", html.Minify)
 m.AddFunc("image/svg+xml", svg.Minify)
 m.AddFuncRegexp(regexp.MustCompile("^(application|text)/(x-)?(java|ecma)script$"), js.Minify)
-router.Use(clevergo.WrapHH(m.Middleware))
+app.Use(clevergo.WrapHH(m.Middleware))
 ```

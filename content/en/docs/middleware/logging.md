@@ -4,17 +4,14 @@ linkTitle: "Logging"
 weight: 3
 ---
 
-Logging middleware is provided by [clevergo/middleware](https://github.com/clevergo/middleware), a wrapper of [gorilla/handlers](https://github.com/gorilla/handlers).
+Logging middleware is enabled by default, if you are using `New` for creating application.
 
 ```go
 import (
     "clevergo.tech/clevergo"
-	"github.com/clevergo/middleware"
 )
 ```
 
 ```go
-m := middleware.Logging(os.Stdout)
-// m := middleware.CombinedLogging(os.Stdout) // combined logging
-router.Use(clevergo.WrapHH(m))
+app.Use(clevergo.Logging())
 ```
