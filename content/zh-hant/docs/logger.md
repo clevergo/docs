@@ -14,9 +14,8 @@ import "go.uber.org/zap"
 ```
 
 ```go
-zapLogger, _ := zap.NewDevelopment()
 app := clevergo.New()
-app.Logger = zapLogger.Sugar()
+app.Logger = zap.NewExample().Sugar()
 ```
 
 ## Logrus
