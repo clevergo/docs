@@ -10,8 +10,6 @@ menu:
 
 CleverGo is a <strong>lightweight</strong>, <strong>high performance</strong> and <strong>feature rich</strong> HTTP web framework written in Go.
 
-In fact, it's not an out of the box framework, it provides many decoupling packages that allow you to customize your application from scratch. Maybe we will provide a customized framework out of the box in the future, but there is no guarantee when it will be completed.
-
 ## Features
 
 - **High Performance:** extremely fast, see [Benchmark](/docs/benchmark).

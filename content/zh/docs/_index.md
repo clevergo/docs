@@ -9,8 +9,6 @@ menu:
 
 CleverGo 一个用 Go 语言编写的<strong>轻量级</strong>、<strong>高性能</strong>和<strong>功能丰富</strong>的 HTTP Web 开发框架。
 
-事实上，其不是一个开箱即用的框架，其提供了许多解藕的包可以让你从头开始自由定制你的应用。或许以后我们会提供一个开箱即用的定制框架，但是不保证何时完成。
-
 ## 特性
 
 - **高性能：** 速度极快，参阅[基准测试](/zh/docs/benchmark)。
