@@ -10,6 +10,8 @@ WORKDIR /src
 
 COPY . /src
 
+ENV HUGO_ENV=production
+
 RUN hugo
 
 
