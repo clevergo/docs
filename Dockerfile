@@ -4,7 +4,7 @@ RUN curl -o /etc/yum.repos.d/hugo.repo https://copr.fedorainfracloud.org/coprs/d
 
 RUN dnf update -y
 
-RUN dnf install -y hugo nodejs git
+RUN dnf install -y hugo git
 
 WORKDIR /src
 
