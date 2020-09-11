@@ -16,7 +16,7 @@ disqusShortname = "clevergo"
   disableNextPrev = false
   baiduAnalytics = "afba29a2d051b29ccf73018b8c9df89c"
   disableSearch = false
-  themeVariant = "purple"
+  themeVariant = "green"
   titleSeparator = "-"
 
 [params.beian]
