@@ -1,6 +1,7 @@
 ---
 title: "Logger"
 weight: 20
+tags: ["logger", "logging"]
 ---
 
 `Application` defines a generic [logger](https://github.com/clevergo/log).

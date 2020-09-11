@@ -1,6 +1,7 @@
 ---
 title: "日志记录器"
 weight: 20
+tags: ["logger", "logging"]
 ---
 
 `Application` 定义了一个通用的 [logger](https://github.com/clevergo/log)。
