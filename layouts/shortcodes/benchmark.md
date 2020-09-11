@@ -1,5 +1,3 @@
-* [Source](https://github.com/razonyang/go-http-routing-benchmark)
-
-**Lower is better!**
+- [Source](https://github.com/razonyang/go-http-routing-benchmark)
 
 ![Benchmark](/img/benchmark.png)

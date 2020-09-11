@@ -1,150 +1,68 @@
-baseURL = "https://clevergo.tech/"
-
-enableRobotsTXT = true
-
-# Hugo allows theme composition (and inheritance). The precedence is from left to right.
-theme = ["docsy"]
-
-# Will give values to .Lastmod etc.
-enableGitInfo = true
-
-# Language settings
-contentDir = "content/en"
+baseURL = "/"
+languageCode = "en-US"
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = false
-# Useful when translating.
-enableMissingTranslationPlaceholders = true
 
-disableKinds = ["taxonomy", "taxonomyTerm"]
-
-# Highlighting config
-pygmentsCodeFences = true
-pygmentsUseClasses = false
-# Use the new Chroma Go highlighter in Hugo.
-pygmentsUseClassic = false
-#pygmentsOptions = "linenos=table"
-# See https://help.farbox.com/pygments.html
-pygmentsStyle = "colorful"
-
-# Configure how URLs look like per section.
-[permalinks]
-blog = "/:section/:year/:month/:day/:slug/"
-
-## Configuration for BlackFriday markdown parser: https://github.com/russross/blackfriday
-[blackfriday]
-plainIDAnchors = true
-hrefTargetBlank = true
-angledQuotes = false
-latexDashes = true
-
-# Image processing configuration.
-[imaging]
-resampleFilter = "CatmullRom"
-quality = 75
-anchor = "smart"
-
-[services]
-[services.googleAnalytics]
-# Comment out the next line to disable GA tracking. Also disables the feature described in [params.ui.feedback].
-id = "UA-97403777-5"
-
-# Language configuration
-
-[languages]
-[languages.en]
-title = "CleverGo Web Framework"
-description = "A lightweight, high performance and feature rich HTTP web framework written in Go."
-languageName ="English"
-# Weight used for sorting.
-weight = 1
-[languages.zh]
-title = "CleverGo Web 框架"
-description = "一个用 Go 语言编写的轻量级、高性能和功能丰富的 HTTP Web 开发框架。"
-languageName ="简体中文"
-contentDir = "content/zh"
-time_format_default = "2006-01-02"
-time_format_blog = "2006-01-02"
-weight = 2
-[languages.zh-hant]
-title = "CleverGo Web 框架"
-description = "一個用 Go 語言編寫的輕量級、高性能和功能豐富的 HTTP Web 開發框架。"
-languageName ="繁體中文"
-contentDir = "content/zh-hant"
-time_format_default = "2006-01-02"
-time_format_blog = "2006-01-02"
-weight = 3
-
-[[menu.main]]
-    name = "GitHub"
-    weight = 60
-    url = "https://github.com/clevergo/clevergo"
-
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
-
-# Everything below this are Site Params
+title = "Hugo Learn Documentation"
+theme = "learn"
+metaDataFormat = "yaml"
+defaultContentLanguageInSubdir= true
 
 [params]
-copyright = "CleverGo"
-
-# Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-github_repo = "https://github.com/clevergo/website"
-# An optional link to a related project repo. For example, the sibling repository where your product code lives.
-github_project_repo = "https://github.com/clevergo/clevergo"
-
-# Enable Algolia DocSearch
-algolia_docsearch = true
-
-# Enable Lunr.js offline search
-offlineSearch = false
-
-# Baidu analytics
-baiduAnalytics = "afba29a2d051b29ccf73018b8c9df89c"
-
-# User interface configuration
-[params.ui]
-# Enable to show the side bar menu in its compact state.
-sidebar_menu_compact = false
-#  Set to true to disable breadcrumb navigation.
-breadcrumb_disable = false
-#  Set to true to hide the sidebar search box (the top nav search box will still be displayed if search is enabled)
-sidebar_search_disable = true
-#  Set to false if you don't want to display a logo (/assets/icons/logo.svg) in the top nav bar
-navbar_logo = true
-# Set to true to disable the About link in the site footer
-footer_about_disable = false
-
-# Adds a H2 section titled "Feedback" to the bottom of each doc. The responses are sent to Google Analytics as events.
-# This feature depends on [services.googleAnalytics] and will be disabled if "services.googleAnalytics.id" is not set.
-# If you want this feature, but occasionally need to remove the "Feedback" section from a single page,
-# add "hide_feedback: true" to the page's front matter.
-[params.ui.feedback]
-enable = true
-# The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
-yes = 'Glad to hear it! Please <a href="https://github.com/clevergo/website/issues/new">tell us how we can improve</a>.'
-no = 'Sorry to hear that. Please <a href="https://github.com/clevergo/website/issues/new">tell us how we can improve</a>.'
-
-[params.links]
-[[params.links.developer]]
-	name = "GitHub"
-	url = "https://github.com/clevergo/clevergo"
-	icon = "fab fa-github"
-        desc = "Development takes place here!"
-
-[params.jquery]
-  src = "https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"
-  hash = "sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-
-[params.docsearch]
-  api_key = "6e86444395683d3c6fb2d97c278095c8"
-  index_name = "clevergo"
-  input_selector = ".td-search-input"
-  debug = false # Set debug to true if you want to inspect the dropdown
+  editURL = "https://github.com/clevergo/website/edit/master/content/"
+  description = "Documentation for CleverGo"
+  author = "Razon Yang"
+  showVisitedLinks = true
+  disableBreadcrumb = false
+  disableNextPrev = false
+  baiduAnalytics = "afba29a2d051b29ccf73018b8c9df89c"
+  disableSearch = false
+  themeVariant = "blue"
+  disqusShortname = "clevergo"
+  titleSeparator = "-"
 
 [params.beian]
   no = "粤公网安备44040302000337号"
   link = "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44040302000337"
   icpNo = "粤ICP备20043980号"
   icpLink = "http://beian.miit.gov.cn/"
+
+[params.docsearch]
+  api_key = "6e86444395683d3c6fb2d97c278095c8"
+  index_name = "clevergo"
+  input_selector = "#searchBy"
+  debug = false # Set debug to true if you want to inspect the dropdown
+
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[Languages]
+[Languages.en]
+title = "CleverGo"
+weight = 1
+languageName = "English"
+
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fab fa-fw fa-github'></i> GitHub"
+url = "https://github.com/clevergo/website"
+weight = 10
+
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-eye'></i> Examples"
+url = "https://github.com/clevergo/examples"
+weight = 20
+
+[Languages.zh]
+title = "CleverGo"
+weight = 2
+languageName = "简体中文"
+
+[[Languages.zh.menu.shortcuts]]
+name = "<i class='fab fa-fw fa-github'></i> GitHub"
+url = "https://github.com/clevergo/website"
+weight = 10
+
+[[Languages.zh.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-eye'></i> 示例"
+url = "https://github.com/clevergo/examples"
+weight = 20

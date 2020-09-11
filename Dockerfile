@@ -12,7 +12,7 @@ COPY . /src
 
 ENV HUGO_ENV=production
 
-RUN hugo
+RUN git submodule update --init --recursive && hugo
 
 
 FROM nginx

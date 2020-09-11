@@ -1,6 +1,0 @@
-{{ if eq (getenv "HUGO_ENV") "production" }}
-{{ if .Site.Params.algolia_docsearch }}
-{{ partial "docsearch-js" $.Site.Params.docsearch }}
-{{ end }}
-{{ partial "baidu-push" }}
-{{ end }}
