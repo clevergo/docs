@@ -44,7 +44,7 @@ languageName = "English"
 
 [[Languages.en.menu.shortcuts]]
 name = "<i class='fab fa-fw fa-github'></i> GitHub"
-url = "https://github.com/clevergo/website"
+url = "https://github.com/clevergo/clevergo"
 weight = 10
 
 [[Languages.en.menu.shortcuts]]
@@ -59,7 +59,7 @@ languageName = "简体中文"
 
 [[Languages.zh.menu.shortcuts]]
 name = "<i class='fab fa-fw fa-github'></i> GitHub"
-url = "https://github.com/clevergo/website"
+url = "https://github.com/clevergo/clevergo"
 weight = 10
 
 [[Languages.zh.menu.shortcuts]]
