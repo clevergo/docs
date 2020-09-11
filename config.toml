@@ -47,9 +47,14 @@ url = "https://github.com/clevergo/clevergo"
 weight = 10
 
 [[Languages.en.menu.shortcuts]]
+name = "<i class='fas fa-tags'></i> Tags"
+url = "/en/tags"
+weight = 20
+
+[[Languages.en.menu.shortcuts]]
 name = "<i class='fas fa-fw fa-eye'></i> Examples"
 url = "https://github.com/clevergo/examples"
-weight = 20
+weight = 100
 
 [Languages.zh]
 title = "CleverGo"
@@ -62,6 +67,11 @@ url = "https://github.com/clevergo/clevergo"
 weight = 10
 
 [[Languages.zh.menu.shortcuts]]
+name = "<i class='fas fa-tags'></i> 标签"
+url = "/zh/tags"
+weight = 20
+
+[[Languages.zh.menu.shortcuts]]
 name = "<i class='fas fa-fw fa-eye'></i> 示例"
 url = "https://github.com/clevergo/examples"
-weight = 20
+weight = 100
