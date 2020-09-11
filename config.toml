@@ -2,10 +2,10 @@ baseURL = "/"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 
-title = "Hugo Learn Documentation"
 theme = "learn"
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
+disqusShortname = "clevergo"
 
 [params]
   editURL = "https://github.com/clevergo/website/edit/master/content/"
@@ -17,7 +17,6 @@ defaultContentLanguageInSubdir= true
   baiduAnalytics = "afba29a2d051b29ccf73018b8c9df89c"
   disableSearch = false
   themeVariant = "blue"
-  disqusShortname = "clevergo"
   titleSeparator = "-"
 
 [params.beian]
