@@ -17,4 +17,6 @@ RUN git submodule update --init --recursive && hugo
 
 FROM nginx
 
-COPY --from=builder /src/public /usr/share/nginx/html
+COPY --from=builder /src/public /app
+
+COPY nginx.conf /etc/nginx/conf.d/default.conf
