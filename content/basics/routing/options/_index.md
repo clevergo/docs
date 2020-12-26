@@ -16,7 +16,7 @@ router.Get("/", index,
 
 ## Route Name
 
-`RouteName` is used to generate URLs, checkout [URL Generation](/en/routing/url-generation) for details.
+`RouteName` is used to generate URLs, checkout [URL Generation](/en/basics/routing/url-generation) for details.
 
 ## Route Middleware
 
