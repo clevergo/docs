@@ -16,7 +16,7 @@ router.Get("/", index,
 
 ## 命名路由
 
-`RouteName` 用于 URLs 生成，详情参阅[生成 URL](/zh/routing/url-generation)。
+`RouteName` 用于 URLs 生成，详情参阅[生成 URL](/zh/basics/routing/url-generation)。
 
 ## 路由中间件
 
