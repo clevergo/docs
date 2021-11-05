@@ -4,5 +4,5 @@
 
 Check out the complete Documentations by clicking the link provided below.
 
-- [English](https://clevergo.tech/en/)
-- [简体中文](https://clevergo.tech/zh/)
+- [English](https://docs.clevergo.tech/en/)
+- [简体中文](https://docs.clevergo.tech/zh/)
